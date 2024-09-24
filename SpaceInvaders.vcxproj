@@ -22,6 +22,7 @@
     <ClCompile Include="BitmapStore.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="GameEngine.cpp" />
+    <ClCompile Include="GameInputHandler.cpp" />
     <ClCompile Include="GameScreen.cpp" />
     <ClCompile Include="InputHandler.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
@@ -38,6 +39,7 @@
     <ClInclude Include="Button.h" />
     <ClInclude Include="DevelopState.h" />
     <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="GameInputHandler.h" />
     <ClInclude Include="GameScreen.h" />
     <ClInclude Include="InputHandler.h" />
     <ClInclude Include="ScreenManager.h" />
