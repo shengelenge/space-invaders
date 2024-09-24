@@ -39,6 +39,7 @@
     <ClInclude Include="ScreenManagerRemoteControl.h" />
     <ClInclude Include="SoundEngine.h" />
     <ClInclude Include="UIPanel.h" />
+    <ClInclude Include="WorldState.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

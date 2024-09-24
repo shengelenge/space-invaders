@@ -107,5 +107,8 @@
     <ClInclude Include="InputHandler.h">
       <Filter>Header Files\Screens</Filter>
     </ClInclude>
+    <ClInclude Include="WorldState.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
