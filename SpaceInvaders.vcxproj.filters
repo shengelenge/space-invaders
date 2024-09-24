@@ -84,6 +84,9 @@
     <ClCompile Include="SelectInputHandler.cpp">
       <Filter>Source Files\Screens\Select</Filter>
     </ClCompile>
+    <ClCompile Include="SelectUIPanel.cpp">
+      <Filter>Source Files\Screens\Select</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DevelopState.h">
@@ -120,6 +123,9 @@
       <Filter>Header Files\Screens\Select</Filter>
     </ClInclude>
     <ClInclude Include="SelectInputHandler.h">
+      <Filter>Header Files\Screens\Select</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectUIPanel.h">
       <Filter>Header Files\Screens\Select</Filter>
     </ClInclude>
   </ItemGroup>
