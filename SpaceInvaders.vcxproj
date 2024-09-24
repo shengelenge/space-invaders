@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BitmapStore.cpp" />
     <ClCompile Include="GameEngine.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
     <ClCompile Include="SoundEngine.cpp" />
     <ClCompile Include="SpaceInvaders.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BitmapStore.h" />
     <ClInclude Include="DevelopState.h" />
     <ClInclude Include="GameEngine.h" />
     <ClInclude Include="ScreenManager.h" />
