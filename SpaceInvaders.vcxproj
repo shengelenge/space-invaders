@@ -20,11 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameEngine.cpp" />
+    <ClCompile Include="SoundEngine.cpp" />
     <ClCompile Include="SpaceInvaders.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DevelopState.h" />
     <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="SoundEngine.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
