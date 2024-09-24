@@ -25,6 +25,7 @@
     <ClCompile Include="InputHandler.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
     <ClCompile Include="ScreenManagerRemoteControl.cpp" />
+    <ClCompile Include="SelectInputHandler.cpp" />
     <ClCompile Include="SelectScreen.cpp" />
     <ClCompile Include="SoundEngine.cpp" />
     <ClCompile Include="SpaceInvaders.cpp" />
@@ -38,6 +39,7 @@
     <ClInclude Include="InputHandler.h" />
     <ClInclude Include="ScreenManager.h" />
     <ClInclude Include="ScreenManagerRemoteControl.h" />
+    <ClInclude Include="SelectInputHandler.h" />
     <ClInclude Include="SelectScreen.h" />
     <ClInclude Include="SoundEngine.h" />
     <ClInclude Include="UIPanel.h" />
