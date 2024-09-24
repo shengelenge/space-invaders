@@ -9,4 +9,6 @@ public:
 	static int NUM_INVADERS_AT_START;
 	static int NUM_INVADERS;
 	static int WAVE_NUMBER;
+
+	WorldState(int worldHeight, int score, int lives, int numInvadersAtStart, int numInvaders, int waveNumber);
 };

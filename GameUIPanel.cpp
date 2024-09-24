@@ -2,6 +2,9 @@
 #include "WorldState.h"
 #include <sstream>
 
+int WorldState::SCORE;
+int WorldState::LIVES;
+
 GameUIPanel::GameUIPanel(sf::Vector2i res) :
 	UIPanel(res,
 		1, // The left

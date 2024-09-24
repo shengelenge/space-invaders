@@ -4,6 +4,9 @@
 #include "GameOverUIPanel.h"
 #include "WorldState.h"
 
+int WorldState::WORLD_HEIGHT;
+int WorldState::NUM_INVADERS;
+int WorldState::NUM_INVADERS_AT_START;
 
 GameScreen::GameScreen(ScreenManagerRemoteControl* smrc, sf::Vector2i res) {
 	m_GIH = std::make_shared<GameInputHandler>();
