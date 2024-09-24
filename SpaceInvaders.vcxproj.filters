@@ -13,10 +13,46 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{10cc361a-e364-4691-8525-e7ff35d807b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FileIO">
+      <UniqueIdentifier>{a33420d0-996d-4e29-b3d4-a0972716bb60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObjects">
+      <UniqueIdentifier>{de907c7c-27b4-4215-9cee-a3f5ad4bad05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Screens">
+      <UniqueIdentifier>{89bfc88e-1314-4036-af99-cabb433e827b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Screens\Game">
+      <UniqueIdentifier>{ab6d2ffc-5b4c-4a7c-bbfc-4c2a7c7922e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Screens\Select">
+      <UniqueIdentifier>{6dc30e05-0c3b-41f8-a459-cc68d0af5b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{c3b104f1-5f70-4acf-a4d4-eb440cad53c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FileIO">
+      <UniqueIdentifier>{944eb624-4b30-49ff-9e50-dd79001bd42c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObjects">
+      <UniqueIdentifier>{5411dae2-bcd7-49a4-a395-97448b61b581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screens">
+      <UniqueIdentifier>{b4f22f2f-9098-4c99-b143-d701e75c384d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screens\Game">
+      <UniqueIdentifier>{343b9cf5-71bc-4442-b2cb-8db3f2289b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screens\Select">
+      <UniqueIdentifier>{eecbddd9-6b29-4099-930b-fa781702ce6a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SpaceInvaders.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files\Engine</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
