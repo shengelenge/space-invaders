@@ -28,6 +28,7 @@
     <ClCompile Include="GameScreen.cpp" />
     <ClCompile Include="GameUIPanel.cpp" />
     <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="Screen.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
     <ClCompile Include="ScreenManagerRemoteControl.cpp" />
     <ClCompile Include="SelectInputHandler.cpp" />
@@ -48,6 +49,7 @@
     <ClInclude Include="GameScreen.h" />
     <ClInclude Include="GameUIPanel.h" />
     <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="Screen.h" />
     <ClInclude Include="ScreenManager.h" />
     <ClInclude Include="ScreenManagerRemoteControl.h" />
     <ClInclude Include="SelectInputHandler.h" />
