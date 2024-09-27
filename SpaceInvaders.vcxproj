@@ -30,6 +30,7 @@
     <ClCompile Include="GameScreen.cpp" />
     <ClCompile Include="GameUIPanel.cpp" />
     <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="RectColliderComponent.cpp" />
     <ClCompile Include="Screen.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
     <ClCompile Include="ScreenManagerRemoteControl.cpp" />
@@ -53,6 +54,7 @@
     <ClInclude Include="GameScreen.h" />
     <ClInclude Include="GameUIPanel.h" />
     <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="RectColliderComponent.h" />
     <ClInclude Include="Screen.h" />
     <ClInclude Include="ScreenManager.h" />
     <ClInclude Include="ScreenManagerRemoteControl.h" />
@@ -62,6 +64,9 @@
     <ClInclude Include="SoundEngine.h" />
     <ClInclude Include="UIPanel.h" />
     <ClInclude Include="WorldState.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SpaceInvaders.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
