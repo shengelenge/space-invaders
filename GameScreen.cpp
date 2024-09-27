@@ -56,7 +56,7 @@ void GameScreen::update(float fps) {
 			m_ScreenManagerRemoteControl->loadLevelInPlayMode("level1");
 		}
 
-		if (WorldState::LIVES <= 0) {
+		if (true/*WorldState::LIVES <= 0*/) {
 			m_GameOver = true;
 		}
 	}

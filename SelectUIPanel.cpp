@@ -6,7 +6,7 @@ SelectUIPanel::SelectUIPanel(sf::Vector2i res) :
 	// by calling  the super-class constructor
 	UIPanel::UIPanel(res,
 		(res.x / 10) * 2, // Start 2/10 across
-		res.y / 6, // 1/3 of the resolution from the top
+		res.y / 6, // 1/6 of the resolution from the top
 		(res.x / 10) * 6, // as wide as 6/10 of the resolution
 		res.y / 2, // and as tall as 1/3 of the resolution
 		0, 255, 255, 255) { // a, r, g, b
