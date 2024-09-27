@@ -12,7 +12,7 @@ private:
 	bool m_Enabled = false;
 
 public:
-	virtual void draw(sf::RenderWindow* window, std::shared_ptr<TransformComponent> t) = 0;
+	virtual void draw(sf::RenderWindow& window, std::shared_ptr<TransformComponent> t) = 0;
 
 	virtual void initializeGraphics(std::string bitmapName, sf::Vector2f objectSize) = 0;
 
