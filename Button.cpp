@@ -1,8 +1,8 @@
 #include "Button.h"
 
-Button::Button(sf::Vector2f position, float width, float height, int red, int green, int blue, std::string text) {
+Button::Button(sf::Vector2f position, float width, float height, int red, int green, int blue, int alpha, std::string text) {
 	m_Button.setPosition(position);
-	m_Button.setFillColor(sf::Color(red, green, blue));
+	m_Button.setFillColor(sf::Color(red, green, blue, alpha));
 	m_Button.setSize(sf::Vector2f(width, height));
 
 	m_Text = "" + text;

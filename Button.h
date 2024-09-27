@@ -13,7 +13,7 @@ public:
 
 	Button(sf::Vector2f position,
 		float width, float height,
-		int red, int green, int blue,
+		int red, int green, int blue, int alpha,
 		std::string text);
 
 	void draw(sf::RenderWindow& window);

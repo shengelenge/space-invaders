@@ -4,6 +4,7 @@
 
 class UIPanel {
 private:
+	sf::ConvexShape m_UIPanel2;
 	sf::RectangleShape m_UIPanel;
 	bool m_Hidden = false;
 	std::vector<std::shared_ptr<Button>> m_Buttons;
@@ -17,7 +18,7 @@ protected:
 	sf::Text m_Text;
 
 	void addButton(float x, float y, int width, int height,
-		int red, int green, int blue,
+		int red, int green, int blue, int alpha,
 		std::string label);
 
 public:
