@@ -154,7 +154,10 @@
       <Filter>Source Files\FileIO</Filter>
     </ClCompile>
     <ClCompile Include="GameObjectSharer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelManager.cpp">
+      <Filter>Source Files\Engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -264,7 +267,10 @@
       <Filter>Header Files\FileIO</Filter>
     </ClInclude>
     <ClInclude Include="GameObjectSharer.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelManager.h">
+      <Filter>Header Files\Engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
