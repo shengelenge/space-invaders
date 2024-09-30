@@ -32,6 +32,7 @@
     <ClCompile Include="GameUIPanel.cpp" />
     <ClCompile Include="GraphicsComponent.cpp" />
     <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="InvaderUpdateComponent.cpp" />
     <ClCompile Include="RectColliderComponent.cpp" />
     <ClCompile Include="Screen.cpp" />
     <ClCompile Include="ScreenManager.cpp" />
@@ -61,6 +62,7 @@
     <ClInclude Include="GameUIPanel.h" />
     <ClInclude Include="GraphicsComponent.h" />
     <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="InvaderUpdateComponent.h" />
     <ClInclude Include="RectColliderComponent.h" />
     <ClInclude Include="Screen.h" />
     <ClInclude Include="ScreenManager.h" />
@@ -74,9 +76,6 @@
     <ClInclude Include="UIPanel.h" />
     <ClInclude Include="UpdateComponent.h" />
     <ClInclude Include="WorldState.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="SpaceInvaders.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
