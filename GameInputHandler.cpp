@@ -6,7 +6,38 @@ class BulletSpawner;
 
 void GameInputHandler::initialize() {}
 
-void GameInputHandler::handleGamepad() {}
+void GameInputHandler::handleGamepad() {
+	float deadZone = 10.f;
+	float x = sf::Joystick::getAxisPosition(0, sf::Joystick::X);
+	float y = sf::Joystick::getAxisPosition(0, sf::Joystick::Y);
+	if (x < deadZone && x > -deadZone) {
+		x = 0;
+	}
+	
+	if (y < deadZone && y > -deadZone) {
+		y = 0;
+	}
+
+	m_PlayerUpdateComponent->updateShipTravelWithController(x, y);
+
+	// Has the player pressed the B button?
+	if (sf::Joystick::isButtonPressed(0, 1)) {
+		m_ButtonPressed = true;
+	}
+
+	// Has the player just released the B button?
+	if (!sf::Joystick::isButtonPressed(0, 1) && m_ButtonPressed) {
+		m_ButtonPressed = false;
+
+		// Shoot a bullet
+		SoundEngine::playShoot();
+		sf::Vector2f spawnLocation;
+		spawnLocation.x = m_PlayerTransformComponent->getLocation().x + m_PlayerTransformComponent->getSize().x / 2;
+		spawnLocation.y = m_PlayerTransformComponent->getLocation().y;
+
+		static_cast<GameScreen*>(getmParentScreen())->getBulletSpawner()->spawnBullet(spawnLocation, true);
+	}
+}
 
 void GameInputHandler::handleKeyPressed(sf::Event& event, sf::RenderWindow& window) {
 	// Handle key presses
