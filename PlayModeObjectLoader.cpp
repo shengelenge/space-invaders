@@ -1,6 +1,6 @@
+#include "PlayModeObjectLoader.h"
 #include <iostream>
 #include <fstream>
-#include "PlayModeObjectLoader.h"
 #include "ObjectTags.h"
 
 void PlayModeObjectLoader::loadGameObjectForPlayMode(std::string pathToFile, std::vector<GameObject>& gameObjects) {
