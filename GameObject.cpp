@@ -1,14 +1,13 @@
 #include "GameObject.h"
+#include <iostream>
 #include "DevelopState.h"
 #include "UpdateComponent.h"
 #include "RectColliderComponent.h"
-#include <iostream>
 
 void GameObject::update(float fps) {
 	if (m_Active && m_HasUpdateComponent) {
 		for (int i = m_FirstUpdateComponentLocation; i < m_FirstUpdateComponentLocation + m_NumberUpdateComponents; i++) {
 			std::shared_ptr<UpdateComponent> tempUpdate = std::static_pointer_cast<UpdateComponent>(m_Components[i]);
-
 			if (tempUpdate->enabled()) {
 				tempUpdate->update(fps);
 			}
@@ -46,6 +45,9 @@ void GameObject::addComponent(std::shared_ptr<Component> component) {
 		// No iteration in the draw method required
 		m_HasGraphicsComponent = true;
 		m_GraphicsComponentLocation = m_Components.size() - 1;
+	} else if (component->getType() == "transform") {
+		// Remember where the transform component is
+		m_TransformComponentLocation = m_Components.size() - 1;
 	} else if (component->getType() == "collider" && component->getSpecificType() == "rect") {
 		// Remember where the collider component(s) is
 		m_HasCollider = true;
@@ -104,12 +106,14 @@ std::shared_ptr<Component> GameObject::getComponentByTypeAndSpecificType(std::st
 
 sf::FloatRect& GameObject::getEncompassingRectCollider() {
 	if (m_HasCollider) {
-		return std::static_pointer_cast<RectColliderComponent>(m_Components[m_FirstRectColliderComponentLocation])->getColliderRectF();
+		return std::static_pointer_cast<RectColliderComponent>(
+			m_Components[m_FirstRectColliderComponentLocation])->getColliderRectF();
 	}
 }
 
 std::string GameObject::getEncompassingRectColliderTag() {
-	return std::static_pointer_cast<RectColliderComponent>(m_Components[m_FirstRectColliderComponentLocation])->getColliderTag();
+	return std::static_pointer_cast<RectColliderComponent>(
+		m_Components[m_FirstRectColliderComponentLocation])->getColliderTag();
 }
 
 std::shared_ptr<UpdateComponent> GameObject::getFirstUpdateComponent() {

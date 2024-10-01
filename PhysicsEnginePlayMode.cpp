@@ -126,6 +126,8 @@ void PhysicsEnginePlayMode::handleInvaderDirection() {
 void PhysicsEnginePlayMode::initialize(GameObjectSharer& gos) {
 	m_PlayerUpdateComponent = std::static_pointer_cast<PlayerUpdateComponent>(
 		gos.findFirstObjectWithTag("Player").getComponentByTypeAndSpecificType("update", "player"));
+
+	m_Player = &gos.findFirstObjectWithTag("Player");
 }
 
 void PhysicsEnginePlayMode::detectCollisions(std::vector<GameObject>& objects, const std::vector<int>& bulletPositions) {
