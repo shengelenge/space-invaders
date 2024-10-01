@@ -39,7 +39,7 @@ public:
 	// Slow - only use in init and start
 	std::shared_ptr<Component> getComponentByTypeAndSpecificType(std::string type, std::string specificType);
 
-	sf::FloatRect& getEncompassingRectCollider(std::string type, std::string specificType);
+	sf::FloatRect& getEncompassingRectCollider();
 	bool hasCollider();
 	bool hasUpdateComponent();
 	std::string getEncompassingRectColliderTag();
