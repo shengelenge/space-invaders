@@ -4,7 +4,17 @@
 
 class BulletSpawner;
 
-void GameInputHandler::initialize() {}
+void GameInputHandler::initialize() {
+	m_PlayerUpdateComponent = std::static_pointer_cast<PlayerUpdateComponent>(
+		getPtrToScreenManagerRemoteControl()
+		->shareGameObjectSharer()
+		.findFirstObjectWithTag("Player")
+		.getComponentByTypeAndSpecificType("update", "player"));
+	m_PlayerTransformComponent = getPtrToScreenManagerRemoteControl()
+		->shareGameObjectSharer()
+		.findFirstObjectWithTag("Player")
+		.getTransformComponent();
+}
 
 void GameInputHandler::handleGamepad() {
 	float deadZone = 10.f;
