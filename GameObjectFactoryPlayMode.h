@@ -5,6 +5,6 @@
 
 class GameObjectFactoryPlayMode {
 public:
-	void buildGameObject(GameObjectBlueprint* bp, std::vector<GameObject>& gameObjects);
+	void buildGameObject(GameObjectBlueprint& bp, std::vector<GameObject>& gameObjects);
 };
 

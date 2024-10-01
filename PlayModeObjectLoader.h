@@ -11,6 +11,6 @@ private:
 	GameObjectFactoryPlayMode m_GameObjectFactoryPlayMode;
 
 public:
-	void loadGameObjectForPlayMode(std::string pathToFile, std::vector<GameObject>& mGameObjects);
+	void loadGameObjectForPlayMode(std::string pathToFile, std::vector<GameObject>& gameObjects);
 };
 

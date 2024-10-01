@@ -21,4 +21,4 @@ public:
 	static const std::string BITMAP_NAME_END;
 	static const std::string ENCOMPASSING_RECT_COLLIDER;
 	static const std::string ENCOMPASSING_RECT_COLLIDER_END;
-}
+};

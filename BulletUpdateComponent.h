@@ -40,8 +40,8 @@ public:
 
 	void Component::start(GameObjectSharer* gos, GameObject* self) {
 		// Where is the specific invader
-		m_TransformComponent = std::static_pointer_cast<TransformComponent>(self->getCompnentByTypeAndSpecificType("transform", "transform"));
-		m_RectColliderComponent = std::static_pointer_cast<RectColliderComponent>(self->getCompnentByTypeAndSpecificType("collider", "rect"));
+		m_TransformComponent = std::static_pointer_cast<TransformComponent>(self->getComponentByTypeAndSpecificType("transform", "transform"));
+		m_RectColliderComponent = std::static_pointer_cast<RectColliderComponent>(self->getComponentByTypeAndSpecificType("collider", "rect"));
 	}
 
 	/****************************************************

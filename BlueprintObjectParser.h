@@ -1,6 +1,6 @@
 #pragma once
-#include "GameObjectBlueprint.h"
 #include <string>
+#include "GameObjectBlueprint.h"
 
 class BlueprintObjectParser {
 private:
