@@ -26,7 +26,7 @@ void BulletUpdateComponent::spawnForInvader(sf::Vector2f spawnPosition) {
 	m_IsSpawned = true;
 
 	srand((int)time(0));
-	m_AlienBulletSpeedModifier = ((rand() % m_ModifierRandomComponent) + m_MinimumAdditionalComponent);
+	m_AlienBulletSpeedModifier = (((rand() % m_ModifierRandomComponent))) + m_MinimumAdditionalComponent;
 
 	m_TransformComponent->getLocation().x = spawnPosition.x;
 	// Tweak the y location based on the height of the bullet

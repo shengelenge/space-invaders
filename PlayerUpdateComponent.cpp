@@ -29,14 +29,18 @@ void PlayerUpdateComponent::update(float fps) {
 		m_TransformComponent->getSize().y);
 
 	// Make sure the ship doesn't go outside the allowed area
-	if (m_TransformComponent->getLocation().x > WorldState::WORLD_WIDTH - m_TransformComponent->getSize().x) {
-		m_TransformComponent->getLocation().x = WorldState::WORLD_WIDTH - m_TransformComponent->getSize().x;
+	if (m_TransformComponent->getLocation().x > 
+		WorldState::WORLD_WIDTH - m_TransformComponent->getSize().x) {
+		m_TransformComponent->getLocation().x = 
+			WorldState::WORLD_WIDTH - m_TransformComponent->getSize().x;
 	} else if (m_TransformComponent->getLocation().x < 0) {
 		m_TransformComponent->getLocation().x = 0;
 	}
 
-	if (m_TransformComponent->getLocation().y > WorldState::WORLD_HEIGHT - m_TransformComponent->getSize().y) {
-		m_TransformComponent->getLocation().y = WorldState::WORLD_HEIGHT - m_TransformComponent->getSize().y;
+	if (m_TransformComponent->getLocation().y > 
+		WorldState::WORLD_HEIGHT - m_TransformComponent->getSize().y) {
+		m_TransformComponent->getLocation().y = 
+			WorldState::WORLD_HEIGHT - m_TransformComponent->getSize().y;
 	} else if (m_TransformComponent->getLocation().y < WorldState::WORLD_HEIGHT / 2) {
 		m_TransformComponent->getLocation().y = WorldState::WORLD_HEIGHT / 2;
 	}

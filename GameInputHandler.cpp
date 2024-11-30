@@ -87,7 +87,8 @@ void GameInputHandler::handleKeyReleased(sf::Event& event, sf::RenderWindow& win
 		SoundEngine::playShoot();
 		sf::Vector2f spawnLocation;
 		
-		spawnLocation.x = m_PlayerTransformComponent->getLocation().x + m_PlayerTransformComponent->getSize().x / 2;
+		spawnLocation.x = m_PlayerTransformComponent
+			->getLocation().x + m_PlayerTransformComponent->getSize().x / 2;
 		spawnLocation.y = m_PlayerTransformComponent->getLocation().y;
 
 		static_cast<GameScreen*>(getmParentScreen())->spawnBullet(spawnLocation, true);

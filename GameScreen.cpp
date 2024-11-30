@@ -80,8 +80,10 @@ void GameScreen::update(float fps) {
 	if (!m_GameOver) {
 		if (m_WaitingToSpawnBulletForPlayer) {
 			std::static_pointer_cast<BulletUpdateComponent>(
-				m_ScreenManagerRemoteControl->getGameObjects()[m_BulletObjectLocations[m_NextBullet]]
-				.getFirstUpdateComponent())->spawnForPlayer(m_PlayerBulletSpawnLocation);
+				m_ScreenManagerRemoteControl
+				->getGameObjects()[m_BulletObjectLocations[m_NextBullet]]
+				.getFirstUpdateComponent())
+				->spawnForPlayer(m_PlayerBulletSpawnLocation);
 
 			m_WaitingToSpawnBulletForPlayer = false;
 			m_NextBullet++;
@@ -94,8 +96,10 @@ void GameScreen::update(float fps) {
 
 		if (m_WaitingToSpawnBulletForInvader) {
 			std::static_pointer_cast<BulletUpdateComponent>(
-				m_ScreenManagerRemoteControl->getGameObjects()[m_BulletObjectLocations[m_NextBullet]]
-				.getFirstUpdateComponent())->spawnForInvader(m_InvaderBulletSpawnLocation);
+				m_ScreenManagerRemoteControl
+				->getGameObjects()[m_BulletObjectLocations[m_NextBullet]]
+				.getFirstUpdateComponent())
+				->spawnForInvader(m_InvaderBulletSpawnLocation);
 
 			m_WaitingToSpawnBulletForInvader = false;
 			m_NextBullet++;

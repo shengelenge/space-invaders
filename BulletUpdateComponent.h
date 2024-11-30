@@ -8,6 +8,7 @@
 class BulletUpdateComponent : public UpdateComponent {
 private:
 	std::string m_SpecificType = "bullet";
+
 	std::shared_ptr<TransformComponent> m_TransformComponent;
 	std::shared_ptr<RectColliderComponent> m_RectColliderComponent;
 
@@ -40,8 +41,10 @@ public:
 
 	void Component::start(GameObjectSharer* gos, GameObject* self) {
 		// Where is the specific invader
-		m_TransformComponent = std::static_pointer_cast<TransformComponent>(self->getComponentByTypeAndSpecificType("transform", "transform"));
-		m_RectColliderComponent = std::static_pointer_cast<RectColliderComponent>(self->getComponentByTypeAndSpecificType("collider", "rect"));
+		m_TransformComponent = std::static_pointer_cast<TransformComponent>(
+			self->getComponentByTypeAndSpecificType("transform", "transform"));
+		m_RectColliderComponent = std::static_pointer_cast<RectColliderComponent>(
+			self->getComponentByTypeAndSpecificType("collider", "rect"));
 	}
 
 	/****************************************************
@@ -50,6 +53,6 @@ public:
 	*****************************************************
 	*****************************************************/
 
-	void UpdateComponent::update(float fps) override;
+	void update(float fps) override;
 };
 

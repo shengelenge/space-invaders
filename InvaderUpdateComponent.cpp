@@ -19,16 +19,17 @@ void InvaderUpdateComponent::update(float fps) {
 
 	m_TimeSinceLastShot += fps;
 
-	// Is the middle of the invader above
-	// player +- 1 world units
-	if (m_TransformComponent->getLocation().x + (m_TransformComponent->getSize().x / 2) >
+	// Is the middle of the invader above player +- 1 world units
+	if ((m_TransformComponent->getLocation().x + (m_TransformComponent->getSize().x / 2)) >
 		(m_PlayerTransformComponent->getLocation().x - m_AccuracyModifier) &&
-		m_TransformComponent->getLocation().x + (m_TransformComponent->getSize().x / 2) <
-		(m_PlayerTransformComponent->getLocation().x + m_AccuracyModifier)) {
+		(m_TransformComponent->getLocation().x + (m_TransformComponent->getSize().x / 2)) <
+		(m_PlayerTransformComponent->getLocation().x +
+		(m_PlayerTransformComponent->getSize().x + m_AccuracyModifier))) {
 		// Has the invader waited long enough since th last shot
 		if (m_TimeBetweenShots > m_TimeSinceLastShot) {
 			SoundEngine::playShoot();
 			sf::Vector2f spawnLocation;
+
 			spawnLocation.x = m_TransformComponent->getLocation().x + (m_TransformComponent->getSize().x / 2);
 			spawnLocation.y = m_TransformComponent->getLocation().y + m_TransformComponent->getSize().y;
 
@@ -58,6 +59,6 @@ void InvaderUpdateComponent::initializeBulletSpawner(BulletSpawner* bulletSpawne
 	m_TimeBetweenShots = (rand() % 15 + m_RandSeed);
 
 	m_AccuracyModifier = (rand() % 2);
-	m_AccuracyModifier += 0 + static_cast<float> (rand() / (static_cast<float> (RAND_MAX / (10))));
+	m_AccuracyModifier += 0 + static_cast<float> (rand()) / (static_cast<float>(RAND_MAX / (10)));
 }
 
