@@ -64,3 +64,10 @@ Follow the official SFML installation guide.
 - Shooting System: There is a problem where sometimes projectiles fail to fire correctly or do not appear on the screen.
 
 These bugs are actively being worked on.
+
+## Screenshots
+
+![Screenshot 2025-01-03 112342](https://github.com/user-attachments/assets/62388359-b364-4b48-8369-3cbea583896d)
+
+![Screenshot 2025-01-03 112757](https://github.com/user-attachments/assets/31de63b7-e866-4924-9da3-6976cae84596)
+
